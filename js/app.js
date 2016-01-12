@@ -1,8 +1,10 @@
+// Calculates avg customers, cups, and beans needed
 function calculations(coffeShop){
   var shopHeading = document.createElement('h1');
   shopHeading.textContent = coffeShop.name;
   document.body.appendChild(shopHeading);
-
+  var shopList = document.createElement('ul');
+  document.body.appendChild(shopList);
   for(var i=0; i < coffeShop.hours.length; i++){
     coffeShop.custHr = coffeShop.customers(coffeShop.minCust, coffeShop.maxCust);
     coffeShop.totCups = (coffeShop.custHr * coffeShop.cups).toFixed(1);
@@ -10,10 +12,12 @@ function calculations(coffeShop){
     coffeShop.beansToGo = (coffeShop.pounds * coffeShop.custHr).toFixed(1);
     coffeShop.beans = (Number(coffeShop.beansForCups) + Number(coffeShop.beansToGo)).toFixed(2);
     // Outputs data to html
-    var coffeeDataEl = document.createElement('p');
+    var coffeeDataEl = document.createElement('li');
     coffeeDataEl.textContent = coffeShop.hours[i] + ": " + coffeShop.beans + ' lbs [' + coffeShop.custHr + ' customers, ' + coffeShop.totCups + ' cups (' + coffeShop.beansForCups + '), ' + coffeShop.beansToGo + 'lbs to-go';
     document.body.appendChild(coffeeDataEl);
   }
+  shopList = document.createElement('ul');
+  document.body.appendChild(shopList);
 }
 // Pike Place
 var pikePlace = {
@@ -23,22 +27,11 @@ var pikePlace = {
   hours: ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'],
   cups: 1.2,
   pounds: 3.7,
-  customers: function(min, max) {
+  customers: function(min,max) {
   return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
   }
 };
 calculations(pikePlace);
-// for(var i=0; i < pikePlace.hours.length; i++){
-//   pikePlace.custHr = pikePlace.customers(pikePlace.minCust, pikePlace.maxCust);
-//   pikePlace.totCups = (pikePlace.custHr * pikePlace.cups).toFixed(1);
-//   pikePlace.beansForCups = (pikePlace.totCups / 20).toFixed(1);
-//   pikePlace.beansToGo = (pikePlace.pounds * pikePlace.custHr).toFixed(1);
-//   pikePlace.beans = (Number(pikePlace.beansForCups) + Number(pikePlace.beansToGo)).toFixed(2);
-//   // Outputs data to html
-//   var pikePlaceEl = document.createElement('p');
-//   pikePlaceEl.textContent = pikePlace.hours[i] + ": " + pikePlace.beans + ' lbs [' + pikePlace.custHr + ' customers, ' + pikePlace.totCups + ' cups (' + pikePlace.beansForCups + '), ' + pikePlace.beansToGo + 'lbs to-go';
-//   document.body.appendChild(pikePlaceEl);
-// }
 
 // Capitol Hill
 var capHill = {
@@ -52,35 +45,60 @@ var capHill = {
   return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
   }
 };
-
-//
-// var capHillHead = document.createElement('h1');
-// capHillHead.textContent = 'Capitol Hill';
-// document.body.appendChild(capHillHead);
-// function calculation(test){
-// for(var i=0; i < test.hours.length; i++){
-//   test.custHr = test.customers(test.minCust, test.maxCust);
-//   test.totCups = (test.custHr * test.cups).toFixed(1);
-//   test.beansForCups = (test.totCups / 20).toFixed(1);
-//   test.beansToGo = (test.pounds * test.custHr).toFixed(1);
-//   test.beans = (Number(test.beansForCups) + Number(test.beansToGo)).toFixed(2);
-//   // Outputs data to html
-//   var capHillEl = document.createElement('p');
-//   capHillEl.textContent = capHill.hours[i] + ": " + capHill.beans + ' lbs [' + capHill.custHr + ' customers, ' + capHill.totCups + ' cups (' + capHill.beansForCups + '), ' + capHill.beansToGo + 'lbs to-go';
-//   document.body.appendChild(capHillEl);
-// }}
-
 calculations(capHill);
 
+// Seattle Public Library
+var seaLibrary = {
+  name: 'Seattle Public Library',
+  minCust: 49,
+  maxCust: 75,
+  hours: ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'],
+  cups: 2.6,
+  pounds: .2,
+  customers: function(min, max) {
+  return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
+  }
+};
+calculations(seaLibrary);
 
-// Assignment
-// var pike = {
-//   min-cust-per-hr: 14,
-//   max-cust-per-hr: 33,
-//   avgCust: 1.2,
-//   avgLbs: 3.1,
-//   // need method to calculate hourly customer and beans sold
-//   // need another property for hourly bean totals
-// }
+// South Lake Union
+var slu = {
+  name: 'South Lake Union',
+  minCust: 35,
+  maxCust: 88,
+  hours: ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'],
+  cups: 1.3,
+  pounds: 3.7,
+  customers: function(min, max) {
+  return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
+  }
+};
+calculations(slu);
 
-// then need to render to display, throw it onto the screen
+// Sea-Tac
+var seaAirport = {
+  name: 'Sea-Tac Aiport',
+  minCust: 68,
+  maxCust: 124,
+  hours: ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'],
+  cups: 1.1,
+  pounds: 2.7,
+  customers: function(min, max) {
+  return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
+  }
+};
+calculations(seaAirport);
+
+// Website Sales
+var websiteSales = {
+  name: 'Website Sales',
+  minCust: 3,
+  maxCust: 6,
+  hours: ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'],
+  cups: 0,
+  pounds: 6.7,
+  customers: function(min, max) {
+  return Math.floor(Math.random() * (max-min + 1) + min).toFixed(2);
+  }
+};
+calculations(websiteSales);
