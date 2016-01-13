@@ -1,6 +1,5 @@
 'use strict';
 var hours = ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'];
-
 function coffeeShops(name, minCust,maxCust,cups, pounds){
   this.storeName = name;
   this.minCust = minCust;
@@ -81,6 +80,4 @@ var seaLibrary = new coffeeShops('Seattle Public Library',49,75,2.6,.2);
 var southLU = new coffeeShops('South Lake Union',35,88,1.3,3.7);
 var seaTac = new coffeeShops('Sea-Tac Airport',68,124,1.1,2.7);
 var webSite = new coffeeShops('Website Sales',3,6,0,6.7);
-
-
 sectEl.appendChild(tblEl);
