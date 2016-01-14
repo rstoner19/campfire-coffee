@@ -3,8 +3,7 @@ body {
   background-color: #FFFFCC;
 }
 .navbar {
-  align: top;
-	margin-top: -10px;
+	margin-top: -65px;
 	left:50%;
 	margin-left:-254px;
 	position: fixed;
@@ -12,14 +11,6 @@ body {
 a:-webkit-any-link {
   text-decoration: none;
   color: #c80000;
-}
-
-.header {
-  display: inline;
-	top: 60px;
-	background-color: #3c4543;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
 }
 li {
 	display: inline;
@@ -30,28 +21,22 @@ li {
 	border-radius: 5px 5px;
 	background-color: #600000;
 }
-#test {
-  margin: auto;
-}
 .headImg{
-  position: relative;
-  margin-top: 50px;
+  
   float: left;
   height: 150px;
   width: 300px;
-  margin-left:20%;
-  margin-bottom: 20px;
+  margin-right: 30px;
 
 }
 .mainLink {
-  position: relative;
+  margin:auto;
   margin-top: 75px;
-  float: right;
-  margin-right: 30%;
-  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-bottom: 100px;
 }
 h3 {
-  margin-top: 10px;
+  position: static;
   text-align: center;
   margin-bottom: 0px;
 }
