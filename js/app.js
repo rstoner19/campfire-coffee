@@ -1,5 +1,5 @@
 
-var storeData = [[0],['Store','Customers','Cups','Beans for Cups','Beans for Bags','Lbs for Coffee']];
+var storeData = [['Store','Customers','Cups','Beans for Cups','Beans for Bags','Lbs for Coffee']];
 var tableHeader = ['Hours','Customers','Cups','Beans for Cups','Beans for Bags','Lbs for Coffee'];
 var count = 1;
 var hours = ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm','8:00pm'];
@@ -108,14 +108,6 @@ var southLU = new coffeeShops('South Lake Union',35,88,1.3,3.7);
 var seaTac = new coffeeShops('Sea-Tac Airport',68,124,1.1,2.7);
 var webSite = new coffeeShops('Website Sales',3,6,0,6.7);
 
-// var Comment  = function(userName, text,text1, text2, text3) {
-//   this.storeName = storeName;
-//   this.min = min1;
-//   this.max2 = max2;
-//   this.cupsSold1 = cupSold1;
-//   this.poundsSold = poundsSold;
-//
-// };
 function handleDataSubmit (){
   console.log(event);
   event.preventDefault();
@@ -135,11 +127,7 @@ var comments = document.getElementById('comments');
 var chatForm = document.getElementById('newForm');
 var clearComments = document.getElementById('clear-comments');
 chatForm.addEventListener('submit', handleDataSubmit);
-clearComments.addEventListener('click', function() {
-  console.log('You just cleared the comments!');
-  comments.innerHTML = '';
-  commentData = [];
-});
+
 
 
 // function totalsTable(tableData){
