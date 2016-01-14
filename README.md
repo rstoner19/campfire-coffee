@@ -7,3 +7,10 @@ This data is calculated through a constructor.  The data is then put into a tabl
 
 
 Author:Rick Stoner
+
+#Jan 14th, 2016
+
+I created a form that has all the fields required to generate a new line on the table.
+
+Navigator: Rick Stoner
+Driver: Munir Ibrahim
