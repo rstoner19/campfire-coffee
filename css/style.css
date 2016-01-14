@@ -58,6 +58,9 @@ h4 {
 h5 {
   color: white;
 }
+h3 {
+  color: white;
+}
 .locations{
   float:right;
   display: inline-block;
@@ -131,4 +134,9 @@ footer {
   height:50px;
   width:50px;
   border-radius: 250px;
+}
+.dataForm > li {
+  display: block;
+  color: white;
+  width: 300px;
 }
