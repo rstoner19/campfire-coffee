@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  background-color: #FFFFCC;
+  background-color: #003330;
 }
 .navbar {
 	margin-top: -65px;
@@ -35,6 +35,12 @@ li {
   margin-left: 20%;
   margin-bottom: 100px;
 }
+h2 {
+  color: white;
+  margin-left: 10px;
+  text-decoration: underline;
+  font-family: cursive;
+}
 h3 {
   position: static;
   text-align: center;
@@ -45,11 +51,46 @@ h1 {
   margin-top: 10px;
   margin-bottom: -15px;
 }
+h4 {
+  font-size: 15px;
+}
+.locations{
+  float:right;
+  display: inline-block;
+  border: 4px solid #600000;
+  border-radius: 20px;
+  text-align: center;
+  width:30%;
+  background-color: #F2AE72;
+  font-size: .75em;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.merch{
+  border-radius: 20px;
+  border: 4px solid #600000;
+  width: 50%;
+  height: 330px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.campfire{
+  float:inherit;
+  width:40%;
+  height:40%;
+  padding:5px;
+  border-radius: 20px;
+}
 table {
   background-color: gray;
   border: 3px solid collapse;
   margin: auto;
   width: 80%;
+}
+.pmainText {
+  color: white;
+  margin-left: 10px;
+  font-family: cursive;
 }
 .mainText {
   border: 4px solid #600000;
@@ -60,6 +101,7 @@ table {
   margin-bottom: 10px;
   background: url(../img/campsite-tent-night.jpg);
   background-size: cover;
+  opacity: .8;
 }
 td {
   border: 1px solid;
