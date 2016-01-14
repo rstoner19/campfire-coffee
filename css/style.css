@@ -51,7 +51,16 @@ table {
   margin: auto;
   width: 80%;
 }
-
+.mainText {
+  border: 4px solid #600000;
+  border-radius: 20px;
+  height: 500px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background: url(../img/campsite-tent-night.jpg);
+  background-size: cover;
+}
 td {
   border: 1px solid;
   margin-top: 0px;
@@ -64,17 +73,14 @@ th{
   padding: 1px;
   text-align: center;
 }
+footer {
+  vertical-align: middle;
+  height: 30px;
+  border-top: 1px solid black;
+}
 .footerImg{
   float: left;
   height:50px;
   width:50px;
   border-radius: 250px;
-}
-.space{
-  margin-left: 15px;
-}
-footer {
-  vertical-align: middle;
-  height: 30px;
-  border-top: 1px solid black;
 }
