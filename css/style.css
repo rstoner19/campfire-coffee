@@ -4,15 +4,19 @@ body {
 }
 .navbar {
   align: top;
-	margin-top: 0px;
+	margin-top: -10px;
 	left:50%;
 	margin-left:-254px;
 	position: fixed;
 }
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #c80000;
+}
+
 .header {
   display: inline;
-	position: relative;
-	top: 45px;
+	top: 60px;
 	background-color: #3c4543;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -24,23 +28,27 @@ li {
 	font-family: Futura, Tahoma, sans-serif;
 	color: #ffffff;
 	border-radius: 5px 5px;
-	background-color: #cc0323
+	background-color: #600000;
 }
 #test {
   margin: auto;
 }
-a.mainLink:link {
-  text-decoration: none;
-  color: #380000;
-  align: right;
+.headImg{
+  position: relative;
+  margin-top: 50px;
+  float: left;
+  height: 150px;
+  width: 300px;
+  margin-left:20%;
+  margin-bottom: 20px;
+
 }
-a.mainLink:visited {
-  text-decoration: none;
-  color: #380000;
-}
-a.mainLink:hover {
-  text-decoration: none;
-  color: #380000;
+.mainLink {
+  position: relative;
+  margin-top: 75px;
+  float: right;
+  margin-right: 30%;
+  margin-bottom: 20px;
 }
 h3 {
   margin-top: 10px;
