@@ -1,25 +1,16 @@
 body {
   width: 100%;
-  background-color: #FFFFCC;
+  background-color: #588C7E;
 }
 .navbar {
-  align: top;
-	margin-top: -10px;
+	margin-top: -65px;
 	left:50%;
-	margin-left:-254px;
+	margin-left:-240px;
 	position: fixed;
 }
 a:-webkit-any-link {
   text-decoration: none;
   color: #c80000;
-}
-
-.header {
-  display: inline;
-	top: 60px;
-	background-color: #3c4543;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
 }
 li {
 	display: inline;
@@ -30,28 +21,29 @@ li {
 	border-radius: 5px 5px;
 	background-color: #600000;
 }
-#test {
-  margin: auto;
-}
 .headImg{
-  position: relative;
-  margin-top: 50px;
   float: left;
   height: 150px;
   width: 300px;
-  margin-left:20%;
-  margin-bottom: 20px;
+  margin-right: 30px;
+  border-radius: 10px;
 
 }
 .mainLink {
-  position: relative;
+  display: block;
+  margin:auto;
   margin-top: 75px;
-  float: right;
-  margin-right: 30%;
-  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-bottom: 100px;
+}
+h2 {
+  color: white;
+  margin-left: 10px;
+  text-decoration: underline;
+  font-family: cursive;
 }
 h3 {
-  margin-top: 10px;
+  position: static;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -60,13 +52,59 @@ h1 {
   margin-top: 10px;
   margin-bottom: -15px;
 }
+h4 {
+  font-size: 15px;
+}
+.locations{
+  float:right;
+  display: inline-block;
+  border: 4px solid #600000;
+  border-radius: 20px;
+  text-align: center;
+  width:30%;
+  background-color: #F2AE72;
+  font-size: .75em;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.merch{
+  background-color: #D96436;
+  border-radius: 20px;
+  border: 4px solid #600000;
+  width: 50%;
+  height: 330px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.campfire{
+  align:left;
+  width:40%;
+  height:40%;
+  padding:10px;
+  border-radius: 20px;
+}
 table {
   background-color: gray;
   border: 3px solid collapse;
   margin: auto;
   width: 80%;
 }
-
+.pmainText {
+  color: white;
+  margin-left: 10px;
+  font-family: cursive;
+}
+.mainText {
+  border: 4px solid #600000;
+  border-radius: 20px;
+  height: 500px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background: url(../img/campsite-tent-night.jpg);
+  background-size: cover;
+  opacity: .8;
+}
 td {
   border: 1px solid;
   margin-top: 0px;
@@ -78,4 +116,15 @@ th{
   border: 1px solid;
   padding: 1px;
   text-align: center;
+}
+footer {
+  vertical-align: middle;
+  height: 30px;
+  border-top: 1px solid black;
+}
+.footerImg{
+  float: left;
+  height:50px;
+  width:50px;
+  border-radius: 250px;
 }
