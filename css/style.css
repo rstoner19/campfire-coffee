@@ -5,7 +5,7 @@ body {
 .navbar {
 	margin-top: -65px;
 	left:50%;
-	margin-left:-254px;
+	margin-left:-240px;
 	position: fixed;
 }
 a:-webkit-any-link {
@@ -22,7 +22,6 @@ li {
 	background-color: #600000;
 }
 .headImg{
-  
   float: left;
   height: 150px;
   width: 300px;
@@ -30,6 +29,7 @@ li {
 
 }
 .mainLink {
+  display: block;
   margin:auto;
   margin-top: 75px;
   margin-left: 20%;
@@ -63,4 +63,18 @@ th{
   border: 1px solid;
   padding: 1px;
   text-align: center;
+}
+.footerImg{
+  float: left;
+  height:50px;
+  width:50px;
+  border-radius: 250px;
+}
+.space{
+  margin-left: 15px;
+}
+footer {
+  vertical-align: middle;
+  height: 30px;
+  border-top: 1px solid black;
 }
