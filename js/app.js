@@ -108,6 +108,40 @@ var southLU = new coffeeShops('South Lake Union',35,88,1.3,3.7);
 var seaTac = new coffeeShops('Sea-Tac Airport',68,124,1.1,2.7);
 var webSite = new coffeeShops('Website Sales',3,6,0,6.7);
 
+// var Comment  = function(userName, text,text1, text2, text3) {
+//   this.storeName = storeName;
+//   this.min = min1;
+//   this.max2 = max2;
+//   this.cupsSold1 = cupSold1;
+//   this.poundsSold = poundsSold;
+//
+// };
+function handleDataSubmit (){
+  console.log(event);
+  event.preventDefault();
+  if (!event.target.locName.value || !event.target.minimum.value || !event.target.maximum.value || !event.target.cupsSold.value || !event.target.poundsSold.value){
+    return alert('All fields must be filled out.');
+  }
+  var shopName = event.target.locName.value;
+  var minimum = event.target.minimum.value;
+  var maximum = event.target.maximum.value;
+  var cupsSold = event.target.cupsSold.value;
+  var poundsSold = event.target.poundsSold.value;
+
+shopName = new coffeeShops(shopName,minimum,maximum,cupsSold,poundsSold);
+
+}
+var comments = document.getElementById('comments');
+var chatForm = document.getElementById('newForm');
+var clearComments = document.getElementById('clear-comments');
+chatForm.addEventListener('submit', handleDataSubmit);
+clearComments.addEventListener('click', function() {
+  console.log('You just cleared the comments!');
+  comments.innerHTML = '';
+  commentData = [];
+});
+
+
 // function totalsTable(tableData){
 //
 // }

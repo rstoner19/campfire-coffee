@@ -13,6 +13,7 @@ a:-webkit-any-link {
   color: #c80000;
 }
 li {
+  z-index: 10;
 	display: inline;
 	padding: 5px;
 	border: 2px solid #000000;
@@ -134,6 +135,12 @@ footer {
   height:50px;
   width:50px;
   border-radius: 250px;
+}
+.userform {
+  width: 350px;
+  color:white;
+  margin-left: 35%;
+  margin-top: 10px;
 }
 .dataForm > li {
   display: block;
