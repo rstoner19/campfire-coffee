@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+  <head><a name="top"></a>
     <title>Campfire Coffee</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,8 +11,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="data.html">Data</a></li>
+            <li><a href="#newShop">New Shop Data</a></li>
             <li><a href='index.html#merchandise'>Merchandise</a></li>
-            <li><a href="order.html">Order Coffe</a></li>
+            <li><a href="order.html">Order Coffee</a></li>
             <li><a href='index.html#targetname'>About Us</a></li>
           </ul>
       </div>
@@ -24,44 +25,49 @@
 
     </header>
     <p></p>
+    <section><p class="note">**If you need to put in data for a new coffee shop, click New Shop Data in the Navigation Bar.</p></section>
+    <section id='total'><h3>Store Totals</h3></section>
     <section id='test'></section>
-    <script src="js/app.js"></script>
 
 
 
 
-    <div>
-      <form id="chat-form" action="index.html" method="post">
+    <div class="userform">
+      <form id="newForm"><a name="newShop"></a>
         <fieldset>
           <legend>Chat submission</legend>
           <ul class="dataForm">
             <li>
               <label for="locName">Location: </label>
-              <input type="text" name="name">
+              <input name="locName" type="text">
             </li>
             <li>
               <label for="minimum">Min Customers: </label>
-              <input type="text" name="say">
+              <input name="minimum" type="text">
             </li>
             <li>
               <label for="maximum">Max Customers: </label>
-              <input type="text" name="name">
+              <input name="maximum"type="text">
             </li>
             <li>
               <label for="cupsSold">Avg. Cups Sold: </label>
-              <input type="text" name="name">
+              <input name="cupsSold" type="text">
             </li>
             <li>
               <label for="poundsSold">Avg. Pounds Sold: </label>
-              <input type="text" name="name">
+              <input name="poundsSold" type="text">
             </li>
           </ul>
-          <button id='button' type="submit" name="button">Generate !</button>
+          <button id="comment-button" type="submit">Generate !</button>
         </fieldset>
       </form>
-      <button id="clear-newData" type="button" name="button">Clear all generated data!</button>
+      <button id="clear-comments">Clear all generated data!</button>
       <ul id="button"></ul>
+      <a href="#top">Back to Top of Page</a>
     </div>
+
+    <script src="js/app.js"></script>
+
     <footer>
       <p>
         <a href="index.html#targetname"><img class="footerImg" title="Learn More About Us" src="img/campfire-family.jpg"></a>

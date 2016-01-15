@@ -6,7 +6,11 @@ This takes into account the minimum and maximum coffee expected for a shop and c
 This data is calculated through a constructor.  The data is then put into a table.
 
 
+
+
 Author:Rick Stoner
+#Jan 14th, 2016 -Rick
+Added a form that the user could input their own number and get a new updated table as well as a table that summarizes all the stores.
 
 #Jan 14th, 2016
 
