@@ -11,7 +11,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="data.html">Data</a></li>
-            <li><a href="#newShop">New Shop Data</a></li>
+            <li><a href="#newShop">New Charts/Bottom</a></li>
             <li><a href='index.html#merchandise'>Merchandise</a></li>
             <li><a href="order.html">Order Coffee</a></li>
             <li><a href='index.html#targetname'>About Us</a></li>
@@ -25,50 +25,47 @@
 
     </header>
     <p></p>
-    <section><p class="note">**If you need to put in data for a new coffee shop, click New Shop Data in the Navigation Bar.</p></section>
-    <section id='total'><h3>Store Totals</h3></section>
-    <section id='test'></section>
-
-
-
-
     <div class="userform">
-      <form id="newForm"><a name="newShop"></a>
+      <form id="newForm">
         <fieldset>
-          <legend>Chat submission</legend>
+          <legend>New Shop Data Input</legend>
           <ul class="dataForm">
             <li>
               <label for="locName">Location: </label>
-              <input name="locName" type="text">
+              <input name="locName" type="text" size="8">
             </li>
             <li>
               <label for="minimum">Min Customers: </label>
-              <input name="minimum" type="text">
+              <input name="minimum" type="text" size="5">
             </li>
             <li>
               <label for="maximum">Max Customers: </label>
-              <input name="maximum"type="text">
+              <input name="maximum"type="text" size="5">
             </li>
             <li>
               <label for="cupsSold">Avg. Cups Sold: </label>
-              <input name="cupsSold" type="text">
+              <input name="cupsSold" type="text" size="5">
             </li>
             <li>
               <label for="poundsSold">Avg. Pounds Sold: </label>
-              <input name="poundsSold" type="text">
+              <input name="poundsSold" type="text" size="5">
             </li>
           </ul>
           <button id="comment-button" type="submit">Generate !</button>
         </fieldset>
       </form>
-      <button id="clear-comments">Clear all generated data!</button>
-      <ul id="button"></ul>
-      <a href="#top">Back to Top of Page</a>
+      <!-- <button id="clear-comments">Clear all generated data!</button>
+      <ul id="button"></ul> -->
     </div>
+    <section></section>
+    <section id='total'><h3>Store Totals</h3></section>
+    <section id='test'></section><br>
+
+      <a href="#top">Back to Top of Page</a>
 
     <script src="js/app.js"></script>
 
-    <footer>
+    <footer> <a name="newShop"></a>
       <p>
         <a href="index.html#targetname"><img class="footerImg" title="Learn More About Us" src="img/campfire-family.jpg"></a>
          Contact Us at: <a href="mailto:campfirecoffee@campfire.com"> campfirecoffee@campfire.com</a>

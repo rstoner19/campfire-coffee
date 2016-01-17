@@ -1,11 +1,12 @@
 body {
   width: 100%;
-  background-color: rgb(0,30,90);
+  background-color: rgb(5,30,90);
 }
 .navbar {
+  justify-content: center;
 	margin-top: -65px;
-	left:50%;
-	margin-left:-240px;
+	left:30%;
+	margin-left:-140px;
 	position: fixed;
 }
 a:-webkit-any-link {
@@ -14,7 +15,7 @@ a:-webkit-any-link {
 }
 li {
   z-index: 10;
-	display: inline;
+	display: inline-block;
 	padding: 5px;
 	border: 2px solid #000000;
 	font-family: Futura, Tahoma, sans-serif;
@@ -116,6 +117,7 @@ td {
   border: 1px solid;
   margin-top: 0px;
   text-align: center;
+  font-size: .75em;
 }
 
 th{
@@ -123,6 +125,7 @@ th{
   border: 1px solid;
   padding: 1px;
   text-align: center;
+  font-size: .75em;
 }
 footer {
   vertical-align: middle;
@@ -137,17 +140,26 @@ footer {
   border-radius: 250px;
 }
 .userform {
-  width: 350px;
+  margin-left: 5%;
+  width: 90%;
   color:white;
-  margin-left: 35%;
   margin-top: 10px;
 }
+.dataForm {
+  display: flex;
+  justify-content: center;
+}
 .dataForm > li {
-  display: block;
+  display: inline-block;
   color: white;
-  width: 300px;
+  font-size: 10px;
+  margin-right: 2px;
+  margin-bottom: 5px;
 }
 .note{
   color: white;
   margin-left: 20px;
+}
+#comment-button{
+  margin-left: 45%;
 }
