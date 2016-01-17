@@ -29,16 +29,16 @@ function coffeeShops(name,minCust,maxCust,cups,pounds){
   }
   this.generateHourlyCups = function(){
     for(var i = 0; i < hours.length; i++){
-      var hourCups = Number((this.hourlyCust[i] * this.cups).toFixed(2));
+      var hourCups = parseInt((this.hourlyCust[i] * this.cups).toFixed(2));
       this.hourlyCups.push(hourCups);
       this.dailyCups += hourCups;
-      this.dailyBeansCups[i] =+ Number((hourCups / 20).toFixed(2));
+      this.dailyBeansCups[i] =+ parseInt((hourCups / 20).toFixed(2));
       this.totalBeans += hourCups/20;
     }
   }
   this.generateHourlyBeans = function(){
     for (var i = 0; i < hours.length; i++){
-      var beans = Number((this.hourlyCust[i] * this.pounds).toFixed(2));
+      var beans = parseInt((this.hourlyCust[i] * this.pounds).toFixed(2));
       this.hourlyBeans.push(beans);
       this.dailyBeans[i] = beans;
       this.totalBeans += beans;
@@ -80,11 +80,11 @@ function coffeeShops(name,minCust,maxCust,cups,pounds){
       tdEl.textContent = this.hourlyBeans[i] + ' lbs';
       trEl.appendChild(tdEl);
       tdEl = document.createElement('td');
-      tdEl.textContent = Number((this.dailyBeansCups[i] + this.hourlyBeans[i]).toFixed(2)) + ' lbs';
+      tdEl.textContent = parseInt((this.dailyBeansCups[i] + this.hourlyBeans[i]).toFixed(2)) + ' lbs';
       trEl.appendChild(tdEl);
       tblEl.appendChild(trEl);
-      this.dailyCust += Number(this.hourlyCust[i]);
-      this.dailyCupsBeans += Number(this.dailyBeansCups[i]);
+      this.dailyCust += parseInt(this.hourlyCust[i]);
+      this.dailyCupsBeans += parseInt(this.dailyBeansCups[i]);
     }
     this.totals = [this.dailyCust, this.dailyCups.toFixed(2), this.dailyCupsBeans.toFixed(2), this.dailyBagBeans.toFixed(2), this.totalBeans.toFixed(2)]
     trEl = document.createElement('tr')
@@ -118,10 +118,16 @@ function handleDataSubmit (){
     return alert('All fields must be filled out.');
   }
   var shopName = event.target.locName.value;
-  var minimum = Number(event.target.minimum.value);
-  var maximum = Number(event.target.maximum.value);
+  var minimum = parseInt(event.target.minimum.value);
+  var maximum = parseInt(event.target.maximum.value);
   var cupsSold = event.target.cupsSold.value;
   var poundsSold = event.target.poundsSold.value;
+
+  event.target.locName.value = null;
+  event.target.minimum.value = null;
+  event.target.maximum.value = null;
+  event.target.cupsSold.value = null;
+  event.target.poundsSold.value = null;
 
 var shopNameHolder = new coffeeShops(shopName,minimum,maximum,cupsSold,poundsSold);
 var valueOfEl = document.getElementById('temptotal');
